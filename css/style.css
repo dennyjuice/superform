@@ -87,6 +87,7 @@ html,body{
 }
 .animate-label label[for="name"],
 .animate-label label[for="pass"]{
+	cursor:text;
 	display:block;
 	position: absolute;
 	left: 15px;
@@ -177,7 +178,7 @@ label[for="remember"]{
 }
 .forgot{
 	display: block;
-	margin-top: 31px;
+	margin-top:-60px;
 	color:#fff;
 	text-align: center;
 	font-family: "Open Sans", sans-serif;
