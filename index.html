@@ -22,10 +22,12 @@
 	<div class="container">
 		<form action="#" class="main-form">
 			<div class="logo"></div>
-			<label for="name">USERNAME</label>
-					<input type="text" name="name" required>
-			<label for="pass">PASSWORD</label>
-				<input type="password" id="pass" name="pass" required>
+			<div class="animate-label">
+				<input type="text" id="name" required>
+				<label for="name">USERNAME</label>
+				<input type="password" id="pass" required>
+				<label for="pass">PASSWORD</label>
+			</div>
 			<input type="submit" name="login" value="login">
 				<input type="checkbox" class="styled" name="remember">
 				<label for="remember">Remember me</label>
