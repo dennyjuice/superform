@@ -1,11 +1,13 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans|Montserrat);
+*{
+	box-sizing: border-box;
+}
 html,body{
   width: 100%;
   height: 100%;
-  text-align: center;
 	font-family: Montserrat, Arial, sans-serif;
 	font-size: 14px;
+	letter-spacing: 1px;
 }
 
 .container{
@@ -14,9 +16,25 @@ html,body{
 		background:url(../assets/background.jpg) no-repeat;
 		background-size: cover;
 		padding-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center;
+}
+.container:before {
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        content: '';
 }
 
 .main-form{
+	 display: inline-block;
+    white-space: normal;
+    vertical-align: middle;
+	
 		width:360px;
 		margin:0 auto;
 		border-radius: 10px;
@@ -32,7 +50,7 @@ html,body{
 		height:20px;
 		position:relative;
 		top:-80px;
-		left:160px;
+		left:120px;
 		border-radius: 100%;
 		border:10px solid #fff;
 		background:#423c31;
@@ -42,4 +60,105 @@ html,body{
 		width:208px;
 		height:108px;
 		margin:0 auto;
+	margin-top: -40px;
+	margin-bottom: 67px;
 }
+input[type="text"],
+input[type="password"]{
+	outline: none;
+	width:100%;
+	height:70px;
+	background:transparent;
+	padding-left:11px;
+	padding-top:20px;
+	font-size: 24px;
+	margin-top:;
+	margin-bottom: 25px;
+	border:1px solid #eaeaea;
+	border-radius:2px;
+	color:#71572C;
+	text-transform:uppercase;
+	box-sizing: border-box;
+}
+label[for="name"],
+label[for="pass"]{
+	display:block;
+	margin-bottom:-30px;
+	padding-left:15px;
+	text-align: left;
+	font-size: 11px;
+	color:#ccc;
+}
+input[type="password"]{
+	margin-bottom: 11px;
+}
+input[type="submit"]{
+	display:block;
+	width:100%;
+	height:50px;
+	background:#EF572E;
+	border:none;
+	border-radius: 2px;
+	color:#fff;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+label[for="remember"]{
+	font-family: "Open Sans", sans-serif;
+	color:#adadad;
+	display: block;
+	padding-left: 30px;
+	text-align: left;
+	letter-spacing: normal;
+}
+
+.checkbox, .radio {
+	width: 25px;
+	height: 25px;
+	padding: 0 5px 0 0;
+	background: url(../assets/checkbox.png) no-repeat;
+	display: block;
+	clear: left;
+	float: left;
+}
+.forgot{
+	display: block;
+	margin-top: 27px;
+	color:#fff;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+}
+/*
+input[name="name"]{
+  display: block;
+  outline: none;
+  width: 100%;
+  background: #fff;
+  border: 2px solid #eaeaea;
+  padding: 15px;
+  font-size: 24px;
+  color: #71572C;
+  font-family: inherit;
+	cursor:text;
+}
+label[for="name"] {
+	cursor:text;
+  display: block;
+  position: relative;
+	left:15px;
+  top: 50px;
+  color:#ccc;
+  font-size: 24px;
+  -webkit-transition: .2s;
+  transition: .2s;
+	text-align: left;
+}
+
+
+.main-form .n-input:valid + label[for="name"],
+.main-form .n-input:focus + label[for="name"] {
+  top: 0;
+  font-size: 11px;
+}
+*/
